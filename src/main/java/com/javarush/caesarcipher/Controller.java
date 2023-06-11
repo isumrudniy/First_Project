@@ -3,12 +3,14 @@ package com.javarush.caesarcipher;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 
 import java.io.File;
+import java.io.FileNotFoundException;
 
 public class Controller {
     @FXML
@@ -23,6 +25,15 @@ public class Controller {
         Platform.exit();
     }
 
+    private void showErrorAlert(String title, String contentText) {
+        Alert alert = new Alert(Alert.AlertType.ERROR);
+        alert.setTitle(title);
+        alert.setHeaderText(null);
+        alert.setContentText(contentText);
+        alert.showAndWait();
+    }
+
+    @FXML
     public void getPath(ActionEvent actionEvent) {
         FileChooser fileChooser = new FileChooser();
         Stage stage = new Stage();
@@ -38,19 +49,34 @@ public class Controller {
         }
     }
 
+    @FXML
     public void onCipher(ActionEvent actionEvent) {
-        if (!srcPathField.equals("") && !destPathField.equals("") && !keyField.equals("")) {
-            HandlerFile handlerFile = new HandlerFile(srcPathField.getCharacters().toString(),
-                    destPathField.getCharacters().toString(), Integer.parseInt(keyField.getCharacters().toString()));
-            handlerFile.cipher();
+        try {
+            if (!srcPathField.equals("") && !destPathField.equals("") && !keyField.equals("")) {
+                HandlerFile handlerFile = new HandlerFile(srcPathField.getCharacters().toString(),
+                        destPathField.getCharacters().toString(), Integer.parseInt(keyField.getCharacters().toString()));
+                handlerFile.cipher();
+            }
+        } catch (NumberFormatException e) {
+            showErrorAlert("Ошибка", "Ключ шифрования должен быть числовой");
+        } catch (Exception e) {
+            if (e.getCause() instanceof FileNotFoundException) {
+                showErrorAlert("Ошибка", "Укажите корректный путь к файлам");
+            }
         }
     }
 
+    @FXML
     public void onDecipher(ActionEvent actionEvent) {
         if (!srcPathField.equals("") && !destPathField.equals("") && !keyField.equals("")) {
             HandlerFile handlerFile = new HandlerFile(srcPathField.getCharacters().toString(),
                     destPathField.getCharacters().toString(), Integer.parseInt(keyField.getCharacters().toString()));
             handlerFile.decipher();
         }
+    }
+
+    @FXML
+    public void onHacker(ActionEvent actionEvent) {
+        showErrorAlert("Ошибка", "Текст ошибки");
     }
 }

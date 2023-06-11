@@ -28,6 +28,7 @@ class HandlerFile {
             }
             bw.flush();
         } catch (Exception e) {
+            throw new RuntimeException(e);
         }
     }
 
@@ -43,6 +44,7 @@ class HandlerFile {
             }
             bw.flush();
         } catch (Exception e) {
+            throw new RuntimeException(e);
         }
     }
 }

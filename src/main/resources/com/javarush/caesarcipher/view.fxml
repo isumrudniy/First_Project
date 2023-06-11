@@ -10,6 +10,7 @@
 <?import javafx.scene.control.TextField?>
 
 <?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.TextFormatter?>
 <VBox xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
       fx:controller="com.javarush.caesarcipher.Controller">
     <HBox alignment="CENTER">
@@ -33,9 +34,12 @@
             <Label text="Ключ шифрования" alignment="BASELINE_LEFT" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
             <TextField fx:id="keyField" maxWidth="40" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
 
-            <Button fx:id="cipherBtn" text="Зашифровать" GridPane.columnIndex="0" GridPane.rowIndex="3" onAction="#onCipher"/>
-            <Button fx:id="decipherBtn" text="Расшифровать" GridPane.columnIndex="1" GridPane.rowIndex="3" onAction="#onDecipher"/>
-            <Button fx:id="hackerBtn" text="Взломать" GridPane.columnIndex="2" GridPane.rowIndex="3"/>
+            <Button fx:id="cipherBtn" text="Зашифровать" GridPane.columnIndex="0" GridPane.rowIndex="3"
+                    onAction="#onCipher"/>
+            <Button fx:id="decipherBtn" text="Расшифровать" GridPane.columnIndex="1" GridPane.rowIndex="3"
+                    onAction="#onDecipher"/>
+            <Button fx:id="hackerBtn" text="Взломать" GridPane.columnIndex="2" GridPane.rowIndex="3"
+                    onAction="#onHacker"/>
         </GridPane>
     </HBox>
     <HBox alignment="CENTER">
