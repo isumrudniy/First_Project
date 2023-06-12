@@ -2,14 +2,25 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="CaesarCipher" />
+      <artifact name="CaesarCipher:jar" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4560de74-201e-4bcd-b4a6-737a9498b203" name="Changes" comment="* JavaFX Application" />
+    <list default="true" id="4560de74-201e-4bcd-b4a6-737a9498b203" name="Changes" comment="* JavaFX Application">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/CaesarCipher_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/javarush/caesarcipher/CaesarHacker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/CaesarCipher.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CaesarCipher/CaesarCipher.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/caesarcipher/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/caesarcipher/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/caesarcipher/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/caesarcipher/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/caesarcipher/HandlerFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/caesarcipher/HandlerFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/javarush/caesarcipher/view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/javarush/caesarcipher/view.fxml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -54,9 +65,10 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
+    "project.structure.last.edited": "Artifacts",
     "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "MavenSettings"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -93,7 +105,7 @@
       <option name="presentableId" value="Default" />
       <updated>1686489954527</updated>
       <workItem from="1686489956342" duration="11177000" />
-      <workItem from="1686503492005" duration="5831000" />
+      <workItem from="1686503492005" duration="11705000" />
     </task>
     <task id="LOCAL-00001" summary="* JavaFX Application">
       <created>1686503406457</created>
@@ -116,7 +128,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686510955936</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="* JavaFX Application">
+      <created>1686511364453</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1686511364453</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -133,7 +152,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="JavaFX" />
+                        <option value="master" />
                       </list>
                     </value>
                   </entry>

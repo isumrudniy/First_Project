@@ -10,13 +10,12 @@
 <?import javafx.scene.control.TextField?>
 
 <?import javafx.scene.layout.HBox?>
-<?import javafx.scene.control.TextFormatter?>
 <VBox xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
       fx:controller="com.javarush.caesarcipher.Controller">
     <HBox alignment="CENTER">
         <GridPane>
             <padding>
-                <Insets top="10" right="10" bottom="10" left="10"/>
+                <Insets topRightBottomLeft="10"/>
             </padding>
 
             <Label text="Путь к исходному файлу: " alignment="BASELINE_LEFT" GridPane.columnIndex="0"

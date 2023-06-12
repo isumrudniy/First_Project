@@ -47,4 +47,16 @@ class HandlerFile {
             throw new RuntimeException(e);
         }
     }
+
+    public void hacker() {
+        try (BufferedReader br = new BufferedReader(new FileReader(this.src));
+             BufferedWriter bw = new BufferedWriter(new FileWriter(this.dest))) {
+            while (br.ready()) {
+                String str = br.readLine();
+                CaesarHacker.bruteForce(str.toCharArray());
+            }
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+    }
 }
