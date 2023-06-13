@@ -1,16 +1,18 @@
-module com.javarush.caesarcipher {
-    requires javafx.controls;
-    requires javafx.fxml;
-    requires javafx.web;
+// Необходимо для запуска на Java 11 и выше.
 
-    requires org.controlsfx.controls;
-    requires com.dlsc.formsfx;
-    requires validatorfx;
-    requires org.kordamp.ikonli.javafx;
-    requires org.kordamp.bootstrapfx.core;
-    requires eu.hansolo.tilesfx;
-    requires com.almasb.fxgl.all;
-
-    opens com.javarush.caesarcipher to javafx.fxml;
-    exports com.javarush.caesarcipher;
-}
+//module com.javarush.caesarcipher {
+//    requires javafx.controls;
+//    requires javafx.fxml;
+//    requires javafx.web;
+//
+//    requires org.controlsfx.controls;
+//    requires com.dlsc.formsfx;
+//    requires validatorfx;
+//    requires org.kordamp.ikonli.javafx;
+//    requires org.kordamp.bootstrapfx.core;
+//    requires eu.hansolo.tilesfx;
+//    requires com.almasb.fxgl.all;
+//
+//    opens com.javarush.caesarcipher to javafx.fxml;
+//    exports com.javarush.caesarcipher;
+//}

@@ -20,6 +20,11 @@ public class Controller {
     @FXML
     private TextField keyField;
 
+    private static final String NOT_NUMERIC = "Ключ шифрования должен быть числом";
+    private static final String FILE_NOT_FOUND = "Укажите корректный путь к файлам";
+    private static final String CIPHER_SECSESS = "Шифрование выполнено успешно";
+    private static final String DECIPHER_SECSESS = "Дешифрование выполнено успешно";
+
     @FXML
     protected void onExitButtonClick() {
         Platform.exit();
@@ -60,17 +65,15 @@ public class Controller {
     @FXML
     public void onCipher(ActionEvent actionEvent) {
         try {
-            if (!srcPathField.equals("") && !destPathField.equals("") && !keyField.equals("")) {
-                HandlerFile handlerFile = new HandlerFile(srcPathField.getCharacters().toString(),
-                        destPathField.getCharacters().toString(), Integer.parseInt(keyField.getCharacters().toString()));
-                handlerFile.cipher();
-                showInformationAlert("Успешно", "Шифрование выполнено успешно");
-            }
+            HandlerFile handlerFile = new HandlerFile(srcPathField.getCharacters().toString(),
+                    destPathField.getCharacters().toString(), Integer.parseInt(keyField.getCharacters().toString()));
+            handlerFile.cipher();
+            showInformationAlert("Успешно", CIPHER_SECSESS);
         } catch (NumberFormatException e) {
-            showErrorAlert("Ошибка", "Ключ шифрования должен быть числовой");
+            showErrorAlert("Ошибка", NOT_NUMERIC);
         } catch (Exception e) {
             if (e.getCause() instanceof FileNotFoundException) {
-                showErrorAlert("Ошибка", "Укажите корректный путь к файлам");
+                showErrorAlert("Ошибка", FILE_NOT_FOUND);
             } else {
                 showErrorAlert("Ошибка", e.getMessage());
             }
@@ -79,18 +82,29 @@ public class Controller {
 
     @FXML
     public void onDecipher(ActionEvent actionEvent) {
-        if (!srcPathField.equals("") && !destPathField.equals("") && !keyField.equals("")) {
-            HandlerFile handlerFile = new HandlerFile(srcPathField.getCharacters().toString(),
-                    destPathField.getCharacters().toString(), Integer.parseInt(keyField.getCharacters().toString()));
-            handlerFile.decipher();
-            showInformationAlert("Успешно", "Дешифрование выполнено успешно");
+        try {
+            if (!srcPathField.equals("") && !destPathField.equals("") && !keyField.equals("")) {
+                HandlerFile handlerFile = new HandlerFile(srcPathField.getCharacters().toString(),
+                        destPathField.getCharacters().toString(), Integer.parseInt(keyField.getCharacters().toString()));
+                handlerFile.decipher();
+                showInformationAlert("Успешно", DECIPHER_SECSESS);
+            }
+        } catch (NumberFormatException e) {
+            showErrorAlert("Ошибка", NOT_NUMERIC);
+        } catch (Exception e) {
+            if (e.getCause() instanceof FileNotFoundException) {
+                showErrorAlert("Ошибка", FILE_NOT_FOUND);
+            } else {
+                showErrorAlert("Ошибка", e.getMessage());
+            }
         }
     }
 
     @FXML
     public void onHacker(ActionEvent actionEvent) {
-        HandlerFile handlerFile = new HandlerFile(srcPathField.getCharacters().toString(),
-                destPathField.getCharacters().toString(), Integer.parseInt(keyField.getCharacters().toString()));
-        handlerFile.hacker();
+        showInformationAlert("Упс", "Метод взлома ещё в разработке :)");
+//        HandlerFile handlerFile = new HandlerFile(srcPathField.getCharacters().toString(),
+//                destPathField.getCharacters().toString(), Integer.parseInt(keyField.getCharacters().toString()));
+//        handlerFile.hacker();
     }
 }

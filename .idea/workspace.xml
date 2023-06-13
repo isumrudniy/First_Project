@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="CaesarCipher:jar" />
+      <artifact name="CaesarCipher" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
@@ -10,16 +10,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4560de74-201e-4bcd-b4a6-737a9498b203" name="Changes" comment="* JavaFX Application">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/CaesarCipher_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/javarush/caesarcipher/CaesarHacker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/CaesarCipher.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/CaesarCipher.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/CaesarCipher_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/CaesarCipher/CaesarCipher.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/caesarcipher/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/caesarcipher/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CaesarCipher/CaesarCipher.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CaesarCipher/CaesarCipher.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/caesarcipher/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/caesarcipher/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/caesarcipher/HandlerFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/caesarcipher/HandlerFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/javarush/caesarcipher/view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/javarush/caesarcipher/view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +41,9 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/javarush/caesarcipher/Controller.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
