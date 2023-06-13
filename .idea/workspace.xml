@@ -9,15 +9,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4560de74-201e-4bcd-b4a6-737a9498b203" name="Changes" comment="* JavaFX Application">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/CaesarCipher.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/CaesarCipher_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="4560de74-201e-4bcd-b4a6-737a9498b203" name="Changes" comment="* Fix Main App and create JAR-file for launch">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/CaesarCipher/CaesarCipher.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CaesarCipher/CaesarCipher.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/caesarcipher/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/caesarcipher/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/javarush/caesarcipher/view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/javarush/caesarcipher/view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +71,7 @@
       <recent name="com.javarush.caesarcipher" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.com.javarush.caesarcipher.App">
     <configuration name="com.javarush.caesarcipher.App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.javarush.caesarcipher.App" />
       <module name="CaesarCipher" />
@@ -91,9 +85,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CaesarCipher.jar" type="JarApplication" temporary="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/out/artifacts/CaesarCipher/CaesarCipher.jar" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.com.javarush.caesarcipher.App" />
+        <item itemvalue="JAR Application.CaesarCipher.jar" />
       </list>
     </recent_temporary>
   </component>
@@ -136,7 +135,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686511364453</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="* Fix Main App and create JAR-file for launch">
+      <created>1686685712145</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1686685712145</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -167,6 +173,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="* JavaFX Application" />
-    <option name="LAST_COMMIT_MESSAGE" value="* JavaFX Application" />
+    <MESSAGE value="* Fix Main App and create JAR-file for launch" />
+    <option name="LAST_COMMIT_MESSAGE" value="* Fix Main App and create JAR-file for launch" />
   </component>
 </project>
