@@ -1,8 +1,6 @@
 package com.javarush.caesarcipher;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 public class CaesarHacker {
 
@@ -15,10 +13,21 @@ public class CaesarHacker {
             'ы', 'ь', 'э', 'ю', 'я', '.', ',', '"', ':', '-', '!', '?', ' '));
 
     public static void bruteForce(char[] chars) {
-        for (int i = 0; i < ALPHABET.size(); i++) {
-            int shift = ALPHABET.size() - i;
-            System.out.println(CaesarCipher.encrypt(chars, shift));
+        Map<Integer, Integer> map = new HashMap<>();
+        for (int shift = 2; shift < ALPHABET.size() - 1; shift++) {
+            StringBuilder line = new StringBuilder();
+            int maxRank = 0;
+            line.append(CaesarCipher.decipher(chars, shift));
+            String[] Strings = line.toString().split(" ");
+            for (String value : Strings
+            ) {
+                if (value.matches("\\w+[.,;:](?=\\s|$)")) {
+                    maxRank++;
+                }
+            }
+            map.put(shift, maxRank);
         }
+        int i = 3;
     }
 
     private static void checkLine(String line) {
