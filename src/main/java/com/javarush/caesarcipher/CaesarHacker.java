@@ -12,22 +12,22 @@ public class CaesarHacker {
             'р', 'с', 'т', 'у', 'ф', 'х', 'ц', 'ч', 'ш', 'щ', 'ъ',
             'ы', 'ь', 'э', 'ю', 'я', '.', ',', '"', ':', '-', '!', '?', ' '));
 
-    public static void bruteForce(char[] chars) {
-        Map<Integer, Integer> map = new HashMap<>();
-        for (int shift = 2; shift < ALPHABET.size() - 1; shift++) {
-            StringBuilder line = new StringBuilder();
+    public static String bruteForce(char[] chars) {
+        List<Integer> list = new ArrayList<>();
+        for (int shift = 0; shift < ALPHABET.size(); shift++) {
             int maxRank = 0;
-            line.append(CaesarCipher.decipher(chars, shift));
-            String[] Strings = line.toString().split(" ");
+            String line = CaesarCipher.decipher(chars, shift);
+            String[] Strings = line.toString().split("[\n ]");
             for (String value : Strings
             ) {
-                if (value.matches("\\w+[.,;:](?=\\s|$)")) {
+                if (value.matches("[А-Яа-яёA-Za-z]+[.,;:!\"](?=\\\\s|$)")) {
                     maxRank++;
                 }
             }
-            map.put(shift, maxRank);
+            list.add(maxRank);
         }
-        int i = 3;
+        int shiftBruteForce = list.indexOf(Collections.max(list));
+        return "Ключ шифра Цезаря " + shiftBruteForce + "\n" + CaesarCipher.decipher(chars, shiftBruteForce);
     }
 
     private static void checkLine(String line) {

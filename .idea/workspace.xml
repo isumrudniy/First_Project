@@ -9,9 +9,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4560de74-201e-4bcd-b4a6-737a9498b203" name="Changes" comment="* Fix Main App and create JAR-file for launch">
+    <list default="true" id="4560de74-201e-4bcd-b4a6-737a9498b203" name="Changes" comment="* Changing the GUI">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/javarush/caesarcipher/view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/javarush/caesarcipher/view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CaesarCipher/CaesarCipher.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CaesarCipher/CaesarCipher.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/caesarcipher/CaesarHacker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/caesarcipher/CaesarHacker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/caesarcipher/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/caesarcipher/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/caesarcipher/HandlerFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/caesarcipher/HandlerFile.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,25 +56,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Artifacts",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "MavenSettings"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.javarush.caesarcipher" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.com.javarush.caesarcipher.App">
+  <component name="RunManager" selected="JAR Application.CaesarCipher.jar">
     <configuration name="com.javarush.caesarcipher.App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.javarush.caesarcipher.App" />
       <module name="CaesarCipher" />
@@ -91,8 +94,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.com.javarush.caesarcipher.App" />
         <item itemvalue="JAR Application.CaesarCipher.jar" />
+        <item itemvalue="Application.com.javarush.caesarcipher.App" />
       </list>
     </recent_temporary>
   </component>
@@ -142,7 +145,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686685712145</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="* Changing the GUI">
+      <created>1686686461826</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1686686461826</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -174,6 +184,23 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="* JavaFX Application" />
     <MESSAGE value="* Fix Main App and create JAR-file for launch" />
-    <option name="LAST_COMMIT_MESSAGE" value="* Fix Main App and create JAR-file for launch" />
+    <MESSAGE value="* Changing the GUI" />
+    <option name="LAST_COMMIT_MESSAGE" value="* Changing the GUI" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/javarush/caesarcipher/CaesarHacker.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/javarush/caesarcipher/CaesarHacker.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

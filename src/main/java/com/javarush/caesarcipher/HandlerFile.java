@@ -1,9 +1,6 @@
 package com.javarush.caesarcipher;
 
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.FileReader;
-import java.io.FileWriter;
+import java.io.*;
 
 class HandlerFile {
     private String src;
@@ -16,16 +13,22 @@ class HandlerFile {
         this.shift = shift;
     }
 
+    public HandlerFile(String src, String dest) {
+        this.src = src;
+        this.dest = dest;
+    }
+
     public void cipher() {
-        try (BufferedReader br = new BufferedReader(new FileReader(this.src));
-             BufferedWriter bw = new BufferedWriter(new FileWriter(this.dest))) {
+        try (BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream(this.src), "UTF-8"));
+             BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(this.dest), "UTF-8"))) {
+            StringBuilder str = new StringBuilder();
             while (br.ready()) {
-                String str = br.readLine();
-                bw.write(CaesarCipher.encrypt(str.toCharArray(), this.shift));
+                str.append(CaesarCipher.encrypt(br.readLine().toCharArray(), this.shift));
                 if (br.ready()) {
-                    bw.write('\n');
+                    str.append('\n');
                 }
             }
+            bw.write(str.toString());
             bw.flush();
         } catch (Exception e) {
             throw new RuntimeException(e);
@@ -33,15 +36,16 @@ class HandlerFile {
     }
 
     public void decipher() {
-        try (BufferedReader br = new BufferedReader(new FileReader(this.src));
-             BufferedWriter bw = new BufferedWriter(new FileWriter(this.dest))) {
+        try (BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream(this.src), "UTF-8"));
+             BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(this.dest), "UTF-8"))) {
+            StringBuilder str = new StringBuilder();
             while (br.ready()) {
-                String str = br.readLine();
-                bw.write(CaesarCipher.decipher(str.toCharArray(), this.shift));
+                str.append(CaesarCipher.decipher(br.readLine().toCharArray(), this.shift));
                 if (br.ready()) {
-                    bw.write('\n');
+                    str.append('\n');
                 }
             }
+            bw.write(str.toString());
             bw.flush();
         } catch (Exception e) {
             throw new RuntimeException(e);
@@ -49,12 +53,17 @@ class HandlerFile {
     }
 
     public void hacker() {
-        try (BufferedReader br = new BufferedReader(new FileReader(this.src));
-             BufferedWriter bw = new BufferedWriter(new FileWriter(this.dest))) {
+        try (BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream(this.src), "UTF-8"));
+             BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(this.dest), "UTF-8"))) {
+            StringBuilder str = new StringBuilder();
             while (br.ready()) {
-                String str = br.readLine();
-                CaesarHacker.bruteForce(str.toCharArray());
+                str.append(br.readLine());
+                if (br.ready()) {
+                    str.append('\n');
+                }
             }
+            bw.write(CaesarHacker.bruteForce(str.toString().toCharArray()));
+            bw.flush();
         } catch (Exception e) {
             throw new RuntimeException(e);
         }

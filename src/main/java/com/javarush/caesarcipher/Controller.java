@@ -24,6 +24,7 @@ public class Controller {
     private static final String FILE_NOT_FOUND = "Укажите корректный путь к файлам";
     private static final String CIPHER_SECSESS = "Шифрование выполнено успешно";
     private static final String DECIPHER_SECSESS = "Дешифрование выполнено успешно";
+    private static final String BRUTE_FORCE_SECSESS = "Взлом выполнен успешно! :)";
 
     @FXML
     protected void onExitButtonClick() {
@@ -83,12 +84,10 @@ public class Controller {
     @FXML
     public void onDecipher(ActionEvent actionEvent) {
         try {
-            if (!srcPathField.equals("") && !destPathField.equals("") && !keyField.equals("")) {
-                HandlerFile handlerFile = new HandlerFile(srcPathField.getCharacters().toString(),
-                        destPathField.getCharacters().toString(), Integer.parseInt(keyField.getCharacters().toString()));
-                handlerFile.decipher();
-                showInformationAlert("Успешно", DECIPHER_SECSESS);
-            }
+            HandlerFile handlerFile = new HandlerFile(srcPathField.getCharacters().toString(),
+                    destPathField.getCharacters().toString(), Integer.parseInt(keyField.getCharacters().toString()));
+            handlerFile.decipher();
+            showInformationAlert("Успешно", DECIPHER_SECSESS);
         } catch (NumberFormatException e) {
             showErrorAlert("Ошибка", NOT_NUMERIC);
         } catch (Exception e) {
@@ -102,9 +101,17 @@ public class Controller {
 
     @FXML
     public void onHacker(ActionEvent actionEvent) {
-        showInformationAlert("Упс", "Метод взлома ещё в разработке :)");
-//        HandlerFile handlerFile = new HandlerFile(srcPathField.getCharacters().toString(),
-//                destPathField.getCharacters().toString(), Integer.parseInt(keyField.getCharacters().toString()));
-//        handlerFile.hacker();
+        try {
+            HandlerFile handlerFile = new HandlerFile(srcPathField.getCharacters().toString(),
+                    destPathField.getCharacters().toString());
+            handlerFile.hacker();
+            showInformationAlert("Успешно", BRUTE_FORCE_SECSESS);
+        } catch (Exception e) {
+            if (e.getCause() instanceof FileNotFoundException) {
+                showErrorAlert("Ошибка", FILE_NOT_FOUND);
+            } else {
+                showErrorAlert("Ошибка", e.getMessage());
+            }
+        }
     }
 }
