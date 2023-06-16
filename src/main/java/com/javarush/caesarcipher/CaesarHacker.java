@@ -15,23 +15,22 @@ public class CaesarHacker {
     public static String bruteForce(char[] chars) {
         List<Integer> list = new ArrayList<>();
         for (int shift = 0; shift < ALPHABET.size(); shift++) {
-            int maxRank = 0;
-            String line = CaesarCipher.decipher(chars, shift);
-            String[] Strings = line.toString().split("[\n ]");
-            for (String value : Strings
-            ) {
-                if (value.matches("[А-Яа-яёA-Za-z]+[.,;:!\"](?=\\\\s|$)")) {
-                    maxRank++;
-                }
-            }
-            list.add(maxRank);
+            list.add(checkLine(CaesarCipher.decipher(chars, shift)));
         }
         int shiftBruteForce = list.indexOf(Collections.max(list));
         return "Ключ шифра Цезаря " + shiftBruteForce + "\n" + CaesarCipher.decipher(chars, shiftBruteForce);
     }
 
-    private static void checkLine(String line) {
-
+    private static int checkLine(String decipherLine) {
+        int maxRank = 0;
+        String[] Strings = decipherLine.split("[\n ]");
+        for (String value : Strings
+        ) {
+            if (value.matches("[А-Яа-яёA-Za-z]+[.,;:!\"](?=\\\\s|$)")) {
+                maxRank++;
+            }
+        }
+        return maxRank;
     }
 
 }
