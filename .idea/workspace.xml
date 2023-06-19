@@ -9,14 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4560de74-201e-4bcd-b4a6-737a9498b203" name="Changes" comment="* last fix">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/javarush/caesarcipher/ApplicationConstant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/CaesarCipher.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/CaesarCipher.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/caesarcipher/CaesarCipher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/caesarcipher/CaesarCipher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/caesarcipher/CaesarHacker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/caesarcipher/CaesarHacker.java" afterDir="false" />
-    </list>
+    <list default="true" id="4560de74-201e-4bcd-b4a6-737a9498b203" name="Changes" comment="* fix after review" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -111,7 +104,7 @@
       <workItem from="1686802432465" duration="1050000" />
       <workItem from="1686831557478" duration="2205000" />
       <workItem from="1686888652429" duration="3376000" />
-      <workItem from="1687194941889" duration="220000" />
+      <workItem from="1687194941889" duration="544000" />
     </task>
     <task id="LOCAL-00001" summary="* JavaFX Application">
       <created>1686503406457</created>
@@ -162,7 +155,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686904039750</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="* fix after review">
+      <created>1687195407524</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1687195407524</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -196,6 +196,7 @@
     <MESSAGE value="* add Caesar hacker class" />
     <MESSAGE value="* fix CaesarHacker" />
     <MESSAGE value="* last fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="* last fix" />
+    <MESSAGE value="* fix after review" />
+    <option name="LAST_COMMIT_MESSAGE" value="* fix after review" />
   </component>
 </project>
