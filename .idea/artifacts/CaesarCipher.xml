@@ -4,9 +4,9 @@
     <properties id="javafx-properties">
       <options>
         <option name="appClass" value="com.javarush.caesarcipher.App" />
-        <option name="description" value="" />
+        <option name="description" value="Шифрование, дешифрование и взлом шифра Цезаря." />
         <option name="htmlPlaceholderId" value="" />
-        <option name="title" value="" />
+        <option name="title" value="Криптоанализатор" />
         <option name="vendor" value="" />
         <option name="version" value="" />
       </options>

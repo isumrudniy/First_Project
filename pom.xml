@@ -12,7 +12,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <junit.version>5.8.2</junit.version>
+        <junit.version>5.9.2</junit.version>
         <javafx.version>17.0.1</javafx.version>
         <javafx.maven.plugin.version>0.0.8</javafx.maven.plugin.version>
     </properties>
@@ -89,7 +89,7 @@
         <dependency>
             <groupId>com.github.almasb</groupId>
             <artifactId>fxgl</artifactId>
-            <version>17</version>
+            <version>17.1</version>
             <exclusions>
                 <exclusion>
                     <groupId>org.openjfx</groupId>

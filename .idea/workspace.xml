@@ -9,12 +9,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4560de74-201e-4bcd-b4a6-737a9498b203" name="Changes" comment="* Changing the GUI">
+    <list default="true" id="4560de74-201e-4bcd-b4a6-737a9498b203" name="Changes" comment="* last fix">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/javarush/caesarcipher/ApplicationConstant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/CaesarCipher.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/CaesarCipher.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/CaesarCipher/CaesarCipher.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CaesarCipher/CaesarCipher.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/caesarcipher/CaesarCipher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/caesarcipher/CaesarCipher.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/caesarcipher/CaesarHacker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/caesarcipher/CaesarHacker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/caesarcipher/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/caesarcipher/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/caesarcipher/HandlerFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/caesarcipher/HandlerFile.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,9 +39,6 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/src/main/java/com/javarush/caesarcipher/Controller.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -74,7 +72,7 @@
       <recent name="com.javarush.caesarcipher" />
     </key>
   </component>
-  <component name="RunManager" selected="JAR Application.CaesarCipher.jar">
+  <component name="RunManager" selected="Application.com.javarush.caesarcipher.App">
     <configuration name="com.javarush.caesarcipher.App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.javarush.caesarcipher.App" />
       <module name="CaesarCipher" />
@@ -94,8 +92,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JAR Application.CaesarCipher.jar" />
         <item itemvalue="Application.com.javarush.caesarcipher.App" />
+        <item itemvalue="JAR Application.CaesarCipher.jar" />
       </list>
     </recent_temporary>
   </component>
@@ -108,7 +106,12 @@
       <option name="presentableId" value="Default" />
       <updated>1686489954527</updated>
       <workItem from="1686489956342" duration="11177000" />
-      <workItem from="1686503492005" duration="11705000" />
+      <workItem from="1686503492005" duration="14424000" />
+      <workItem from="1686801475248" duration="847000" />
+      <workItem from="1686802432465" duration="1050000" />
+      <workItem from="1686831557478" duration="2205000" />
+      <workItem from="1686888652429" duration="3376000" />
+      <workItem from="1687194941889" duration="220000" />
     </task>
     <task id="LOCAL-00001" summary="* JavaFX Application">
       <created>1686503406457</created>
@@ -138,21 +141,28 @@
       <option name="project" value="LOCAL" />
       <updated>1686511364453</updated>
     </task>
-    <task id="LOCAL-00005" summary="* Fix Main App and create JAR-file for launch">
-      <created>1686685712145</created>
+    <task id="LOCAL-00005" summary="* add Caesar hacker class">
+      <created>1686572659960</created>
       <option name="number" value="00005" />
       <option name="presentableId" value="LOCAL-00005" />
       <option name="project" value="LOCAL" />
-      <updated>1686685712145</updated>
+      <updated>1686572659960</updated>
     </task>
-    <task id="LOCAL-00006" summary="* Changing the GUI">
-      <created>1686686461826</created>
+    <task id="LOCAL-00006" summary="* fix CaesarHacker">
+      <created>1686851127656</created>
       <option name="number" value="00006" />
       <option name="presentableId" value="LOCAL-00006" />
       <option name="project" value="LOCAL" />
-      <updated>1686686461826</updated>
+      <updated>1686851127657</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="* last fix">
+      <created>1686904039750</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1686904039750</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -183,24 +193,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="* JavaFX Application" />
-    <MESSAGE value="* Fix Main App and create JAR-file for launch" />
-    <MESSAGE value="* Changing the GUI" />
-    <option name="LAST_COMMIT_MESSAGE" value="* Changing the GUI" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/javarush/caesarcipher/CaesarHacker.java</url>
-          <line>23</line>
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/javarush/caesarcipher/CaesarHacker.java</url>
-          <line>28</line>
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="* add Caesar hacker class" />
+    <MESSAGE value="* fix CaesarHacker" />
+    <MESSAGE value="* last fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="* last fix" />
   </component>
 </project>
