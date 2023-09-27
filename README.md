@@ -1,5 +1,6 @@
 # JavaRush-Cryptanalyzer
-**Task:** <br>
+JavaRush. Module 1.
+### Task:
 Write a program that works with Caesar cipher.
 
 **Mandatory requirements**<br>
@@ -12,7 +13,7 @@ The program must have 2 modes:
   The program must brute force the ciphertext passed as a text file.
   If the user chooses brute force, the program must independently, by brute force, find the key and decrypt the text.
 
-## Note:
+### Note:
 * The cryptographic alphabet is based on all uppercase and capital letters of the Russian alphabet and punctuation marks (. , "" : - ! ! ? SPACE).
 If there are characters that are not included in the cryptographic alphabet, such characters are simply skipped and are not encrypted.
 
